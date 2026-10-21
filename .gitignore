@@ -1,0 +1,34 @@
+# Cache e Dependências (Evita subir as pastas pesadas de bibliotecas)
+**/node_modules/
+.pnpm-store/
+
+# Arquivos de Variáveis de Ambiente (SEGURANÇA: NUNCA SUBIR PRO GITHUB)
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Compilação e Produção (Pastas geradas automaticamente pelo Vite/Node)
+**/dist/
+**/dist-ssr/
+**/.cache/
+
+# Logs de Erro do NPM / Yarn / PNPM
+**/logs/
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/lerna-debug.log*
+
+# Configurações de Editores e Sistema Operacional (VS Code / Windows / Mac)
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
