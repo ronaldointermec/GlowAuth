@@ -1,0 +1,6 @@
+@GlowAuthBackendNet_HostAddress = http://localhost:5259
+
+GET {{GlowAuthBackendNet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

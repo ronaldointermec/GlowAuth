@@ -10,6 +10,9 @@ interface UserProfile {
 
 function App() {
   // 1. O estado agora inicia tentando ler o que já está gravado no LocalStorage
+  const port = 5259; // .net 5259
+  const url = `http://localhost:${port}/auth/google`; // URL do endpoint de validação do token
+
   const [user, setUser] = useState<UserProfile | null>(() => {
     const savedUser = localStorage.getItem("@GlowAuth:user");
     return savedUser ? JSON.parse(savedUser) : null;
@@ -18,8 +21,12 @@ function App() {
   async function handleCredentialResponse(
     response: google.accounts.CredentialResponse,
   ) {
+    console.log("=== COPIE ESTA STRING GIGANTE PARA O INSOMNIA ===");
+    console.log(response.credential);
+    console.log("=================================================");
+
     try {
-      const res = await fetch("http://localhost:3000/auth/google", {
+      const res = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ token: response.credential }),

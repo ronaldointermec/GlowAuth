@@ -1,13 +1,17 @@
-# Cache e Dependências (Evita subir as pastas pesadas de bibliotecas)
+# ==========================================
+# ⚡ NODE.JS, VITE & TYPESCRIPT (Front & Back)
+# ==========================================
+
+# Cache e Dependências
 **/node_modules/
 .pnpm-store/
 
-# Arquivos de Variáveis de Ambiente (SEGURANÇA: NUNCA SUBIR PRO GITHUB)
+# Arquivos de Variáveis de Ambiente (SEGURANÇA!)
 **/.env
 **/.env.local
 **/.env.*.local
 
-# Compilação e Produção (Pastas geradas automaticamente pelo Vite/Node)
+# Compilação e Produção
 **/dist/
 **/dist-ssr/
 **/.cache/
@@ -21,14 +25,35 @@
 **/pnpm-debug.log*
 **/lerna-debug.log*
 
-# Configurações de Editores e Sistema Operacional (VS Code / Windows / Mac)
+# ==========================================
+# ☁️ .NET & VISUAL STUDIO (Back-end C#)
+# ==========================================
+
+# Pastas de Compilação e Binários (MUITO IMPORTANTE)
+**/bin/
+**/obj/
+
+# Arquivos de Configuração de Usuário e Cache do VS
+**/.vs/
+**/*.user
+**/*.userosscache
+**/*.suo
+**/*.userprefs
+
+# Arquivos gerados pelo build de publicação do .NET
+**/publish/
+**/out/
+
+# Arquivos de Log e Relatórios do .NET
+**/*.log
+**/*.vshost.exe*
+**/*.vshost.bi*
+
+# ==========================================
+# 💻 SISTEMA OPERACIONAL & EDITORES
+# ==========================================
 .vscode/*
 !.vscode/extensions.json
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 .DS_Store
 Thumbs.db
