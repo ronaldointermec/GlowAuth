@@ -44,13 +44,13 @@ O projeto foge do modelo simplista de autenticação local e adota o fluxo recom
 
 Crie um arquivo `.env` na raiz da pasta `backend/`:
 ```env
-GOOGLE_CLIENT_ID=seu_id_do_google_://googleusercontent.com
+GOOGLE_CLIENT_ID=seu_id_do_google_
 PORT=3000
 ```
 
 Crie um arquivo `.env` na raiz da pasta `frontend/`:
 ```env
-VITE_GOOGLE_CLIENT_ID=seu_id_do_google_://googleusercontent.com
+VITE_GOOGLE_CLIENT_ID=seu_id_do_google_
 ```
 
 ### 3. Executando o Back-end
